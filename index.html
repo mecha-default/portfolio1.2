@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -21,23 +21,22 @@
             <li><a href="mi-nombre" clas="links-nav">HOLA</a></li>
             <li><a href="mis-conocimientos" clas="links-nav">CONOCIMIENTOS </a></li>
             <li><a href="mis-proyectos" clas="links-nav">PROYECTO</a></li>
-            <li><a class="boton-personalizado" href="#formulario-de-contacto">Contacto</a></li>
+            <li><a class="boton-personalizado" href="#formulario-de-contacto">CONTACTO</a></li>
         </ul>
     </nav>
 
-    <section id="about">
+    <section id="presentacion">
         <div class="centrado-de-contenido-presentacion">
 
             <div class="mi-nombre">
-                <h2>Hola! Soy</h2>
+                <h2>¡Hola! Soy</h2>
 <br>
-                <h1> Mercedes Fresno </h1>
+                <h1 class="mmf"> Mercedes Fresno </h1>
 <br>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing </p>
+                <p> Aspirante a programadora Front-end</p>
 <br>
                 <div class="lo-que-hago"><a href=""> LO QUE HAGO</a></div>
             </div>
-        </div>
 
         <div class="mi-imagen">
             <img src="img/img portfolio.png" class="mi-foto">
@@ -46,12 +45,12 @@
     </section>
 
     <section class="mis-conocimientos">
+        <div class="centrado-de-contenido-mis-conocimientos">
+        <div class="titulo-mis-conocimientos">
         <h2>Mis conocimientos</h2>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quod eum laboriosam ad odio impedit
-            perferendis, error voluptates dicta, consequatur sapiente quo quae porro molestiae! Et nihil dignissimos
-            maiores temporibus?</p>
-    </section>
-
+        <p> Estos son las tecnologias a desarrollar durante la cursada de Ada Front -end Developer, en 8 modulos y alrededor de 123 clases.</p>
+   
+       </div>
     <div id="cards">
         <div class="fila1">
         <div class="image-1">
@@ -82,23 +81,35 @@
         </div>
     </div>
     </div>
+</div>
+</section>
+
 
     <section class="cita">
         <div class="centrado-de-contenido-cita">
+            <div class="ancho-de-cita">
             <img src="img/cita-izquierda.png" alt="comillas" width="100px" height="100px">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est adipisci quisquam ab enim velit id,
-                deleniti asperiores. Placeat consequatur, adipisci accusantium accusamus provident voluptatem atque
-                veniam fugiat porro nesciunt nemo.
+            
+            <p> “Caminante, no hay camino,
+                se hace camino al andar.
+                Al andar se hace el camino,
+                y al volver la vista atrás
+                se ve la senda que nunca
+                se ha de volver a pisar.
+                Caminante, no hay camino
+                sino estelas en la mar.”
             </p>
-            <h2> autor de la cita </h2>
+            <h2> Antonio Machado </h2>
+        </div>
         </div>
     </section>
 
     <section class="mis-proyectos">
         <div class="centrado-de-contenido-mis-proyectos">
+            <div class="titulo-mis-proyectos">
             <h2>Mis Proyectos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
-                nesciunt?</p>
+            <p>Estos son mis proyectos a desarrolar en Ada 9na generacion de programadoras!</p>
+            </div>
             <div class="container-mis-proyectos">
                 <div class="cards-1">
                     <img src="img/undraw_Balloons_re_8ymj.svg" width="250px" height="250px">
@@ -134,28 +145,27 @@
 
     <section id="formulario-de-contacto">
         <div class="centrado-de-contenido-formulario">
+            <div class="form-container">
             <div class="redes">
                 <h2 class="titulo-redes">Contactame</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam facere, porro pariatur officiis
-                    suscipit provident soluta nam sed facilis minima dicta natus commodi. Voluptas excepturi inventore
-                    nihil tempore facilis repellendus.</p> <br>
+                <p>Podemos entrar en contacto por redes sociales y correo electronico, o bien podes dejarme tus datos y un mensaje en el formulario y te escribo!</p>
+
                 <ul class="redes1">
                     <li>
-                        <a href="hola" class="link-redes"> twitter</a> <div class="icono" ></div>
+                        <a href="https://twitter.com/mechadefault" class="link-redes"><i class="fab fa-twitter"></i>twitter</a>
                     </li>
                     <li>
-                        <a href="hola" class="link-redes"> git-hub </a> <div class="icono" ></div>
+                        <a href="https://github.com/mecha-default" class="link-redes"><i class="fab fa-github-alt"></i>git-hub </a>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mfresno/" class="link-redes"> <i class="fab fa-linkedin-in"></i>linkedin</a>
                     </li>
                     <li>
-                        <a href="hola" class="link-redes"> <div class="icono"><i class="fab fa-linkedin-in"></i>linkedin</a></div>
-                    </li>
-                    <li>
-                        <a href="hola" class="link-redes">gmail</a><div class="icono" ></div>
+                        <a href="mailto:mercedes.fresno@gmail.com" class="link-redes"><i class="fas fa-envelope"></i>gmail</a>
                     </li>
                 </ul>
+            
             </div>
             <div class="form">
-
                 <form action="" method="POST">
                     <h2 class="titulo-redes">Escribime</h2>
                     <ul>
@@ -186,6 +196,7 @@
                 </form>
             </div>
         </div>
+        </div>
     </section>
     <footer id="futer">
         <ul class="pie-de-pagina">
@@ -194,6 +205,19 @@
             <li><a href="mis-proyectos" clas="links-nav">PROYECTO</a></li>
             <li><a href="#formulario-de-contacto">CONTACTO</a></li>
         </ul>
+        <ul class="redes-pie">
+                    <li>
+                        <a href="https://twitter.com/mechadefault" class="pie-links"><i class="fab fa-twitter turn"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mecha-default" class="pie-links"><i class="fab fa-github-alt turn"></i></a>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mfresno/" class="pie-links"> <i class="fab fa-linkedin-in turn"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:mercedes.fresno@gmail.com" class="pie-links"><i class="fas fa-envelope turn"></i></a>
+                    </li>
+                </ul>
         <p>Hecho con 💜 por Mecha</p>
     </footer>
 

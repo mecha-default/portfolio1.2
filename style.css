@@ -15,27 +15,34 @@ ul {
 #nav, .encabezado{
     display: flex;
     justify-content: flex-end; /* MODIFICACION*/
-    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    align-items: flex-end;
+
 }
 .encabezado{
     background-color:thistle;
     width: 100%;
     padding: 20px;  
-    box-shadow:rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    height: 80px; 
 }
 
 
 a:link{ /*MODIFICACION */
     text-decoration: none;
     color: black;
-    margin-right: 30px; 
+    margin-right: 50px;
+
 
 }
+
+/* NO FUNCIONA HOVER
+.encabezado >a :hover{
+    color: pink;
+}*/ 
 
 .boton-personalizado {
     text-decoration:none;
     font-weight: 600;
-    font-size: 20px;
     color:#333333;  
     background-color:#c142e1;
     border-color: #c142e1;
@@ -53,20 +60,42 @@ a:link{ /*MODIFICACION */
     border-color:hsl(278, 41%, 36%)
 }    
     
-/* fin menú */
+/* fin NAV*/
 
 /* PRESENTACION */
 
-#about, .centrado-de-contenido-presentacion{
+#presentacion{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
-    background-color: blueviolet;   
+    justify-content: center;
+    background-color: blueviolet; 
+    height: 500px;
+    margin-top: 20px;
+
+
 }
-/*.mi-nombre{
-display: flex;
-flex-direction: column;
-}*/
+.mi-nombre{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin-right: 30px;
+    
+}
+.centrado-de-contenido-presentacion{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.mmf{
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    color: pink;
+
+}
 
 .lo-que-hago{
     text-decoration:none;
@@ -77,8 +106,6 @@ flex-direction: column;
     border-color: #c142e1;
     border-radius:35px; 
     padding: 5px;
-    display: inline-block;
-    padding-left: 25px;
     margin: 0;
 }
 .lo-que-hago:hover{
@@ -87,30 +114,45 @@ flex-direction: column;
 }
 .mi-imagen > img{
     width: 450px;
-    height: 400px;
-    display:block;
+    height: 350px;
     margin:auto;
     background-color: lightcoral;
+
+
 }
 
 /* Fin PRESENTACION */
 
 /* MIS CONOCIMIENTOS */
 
-.mis-conocimientos{
+.centrado-de-contenido-mis-conocimientos{
+    width: 1100px;
     text-align: center;
-    background-color: lightseagreen;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
     margin: 0;
+
+}
+.titulo-mis-conocimientos{
+    width: 400px;
+    height: 100px;
+
+
+}
+
+.mis-conocimientos{
+display: flex;
+text-align: center;
+justify-content: center; 
+background-color: lightseagreen; 
+margin-top: 20px;
 
 }
 
 
-/* Fin de mis conocimientos*/
+
 
 
 /* Cards */
@@ -124,9 +166,8 @@ justify-content:center ;
 background-color: lightgreen;
 padding: 30px;
 
-
-
 }
+
 
 .fila1, .fila2{
     display: flex;
@@ -170,7 +211,16 @@ padding: 30px;
     margin-bottom: 20px;
 }
 
+.image:hover{
+    border: 1px solid pink
+
+} /* NOFUNKA */
+
+
+
 /* Fin Cards */
+
+/* Fin de mis conocimientos*/
 
 /* cita */
 
@@ -178,6 +228,27 @@ padding: 30px;
     display: flex;
     text-align: center;
     background-color: olive;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.ancho-de-cita{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centrado-de-contenido-cita{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 /* Fin de cita */
@@ -187,21 +258,34 @@ padding: 30px;
 .mis-proyectos {
     text-align: center;
     background-color: salmon;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+
 }
 
+.centrado-de-contenido-mis-proyectos{
+    width: 1100px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;  
+
+
+}
 .container-mis-proyectos{
     display: flex;
     flex-wrap: wrap;
-    
-    
+    margin-left: 70px;
+       
 }
-
 .cards-1, .cards-2, .cards-3 {
     display: flex;
     flex-direction: column;
     border: 1px solid grey;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px;
 
 }
 .cards-4, .cards-5, .cards-6, .cards-7{
@@ -210,6 +294,8 @@ padding: 30px;
     border: 1px solid grey;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px;
+
 
 }
 
@@ -218,32 +304,32 @@ padding: 30px;
 
 /* formulario-de-contacto  */
 
-#formulario-de-contacto > .centrado-de-contenido-formulario, .form{
+#formulario-de-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-container{
 display: flex;
 flex-direction: row;
-justify-content: center;
-align-items: center;
+justify-content: space-evenly;
 background-color: sandybrown;
-margin: 30px;
-}
+width: 850px;
+height: 450px;
+border: 1px solid grey;
+border-radius: 20px;
+padding: 50px;
+margin-top: 20px;
 
-.centrado-de-contenido-formulario, .form{
-
-    align-items: center;
-    margin: 20px;
-    padding: 15px;
-
-}
-.redes>p{
-    box-sizing: border-box;
-    width: 400px;
-    padding: 5px;
 }
 
 i{
     padding: 20px;
     margin: 10px;
     font-size: 20px;
+    display: flex;
+    
 }
 i:hover{
     background-color: skyblue;
@@ -251,24 +337,21 @@ i:hover{
     box-sizing: border-box;
     width: 30px;
     height: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
       
 }
 
 .form{
     margin: 0;
     width: 500px;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+   
 }
-.form > ul{
-    margin:0;
-    padding: 0;
 
-}
-.form >li {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
 
 label{
     display: inline-block;
@@ -282,26 +365,37 @@ input, textarea{
     box-sizing: border-box;
     border: 1px solid grey;
 }
-
+/*
 input:focus, textarea:focus{
     border-color: hotpink;
 
-}
+} NO FUNCIONA 
+*/
+
 textarea{
  vertical-align: top;
  height: 6em;
 
+
+
 }
 .boton-enviar{
-    padding-left: 90px;
-    background-color: orange;
+    background-color: yellow;
     border-radius: 40px;
-   
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    border-style: none;
+    font-family: sans-serif;
+    display: flex;
+
+
 }
 .form >button{
     text-align: center;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Roboto Slab', serif;
+   
 }
 
 /* Fin formulario contacto */
@@ -310,13 +404,14 @@ textarea{
 
 .redes {
     background-color:sandybrown;
-    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  
+   
 }
-.redes > ul{
-    justify-content: space-around;
-
-}
-
 /* Fin de redes */
 
 /* FOOTER*/
@@ -329,13 +424,21 @@ textarea{
 
 }
 
-
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:thistle;
-    height: 100px;
+    height: 150px;
+    margin-top: 20px;
+}
+.redes-pie{
+    display: flex;
+}
+.turn:hover{
+
+    background-color: white;
+    transition: 0.1s;
 
 }
