@@ -18,9 +18,9 @@
 
     <nav id="nav">
         <ul class="encabezado">
-            <li><a href="mi-nombre" clas="links-nav">HOLA</a></li>
-            <li><a href="mis-conocimientos" clas="links-nav">CONOCIMIENTOS </a></li>
-            <li><a href="mis-proyectos" clas="links-nav">PROYECTO</a></li>
+            <li><a href="#presentacion" class="links-nav">HOLA</a></li>
+            <li><a href="#mis-conocimientos" class="links-nav">CONOCIMIENTOS </a></li>
+            <li><a href="#mis-proyectos" class="links-nav">PROYECTO</a></li>
             <li><a class="boton-personalizado" href="#formulario-de-contacto">CONTACTO</a></li>
         </ul>
     </nav>
@@ -35,7 +35,11 @@
 <br>
                 <p> Aspirante a programadora Front-end</p>
 <br>
-                <div class="lo-que-hago"><a href=""> LO QUE HAGO</a></div>
+            <ul>
+                <li>
+                <a href=""class="lo-que-hago">LO QUE HAGO</a>
+            </li>
+            </ul>
             </div>
 
         <div class="mi-imagen">
@@ -44,7 +48,7 @@
         </div>
     </section>
 
-    <section class="mis-conocimientos">
+    <section id="mis-conocimientos">
         <div class="centrado-de-contenido-mis-conocimientos">
         <div class="titulo-mis-conocimientos">
         <h2>Mis conocimientos</h2>
@@ -84,7 +88,6 @@
 </div>
 </section>
 
-
     <section class="cita">
         <div class="centrado-de-contenido-cita">
             <div class="ancho-de-cita">
@@ -104,7 +107,7 @@
         </div>
     </section>
 
-    <section class="mis-proyectos">
+    <section id="mis-proyectos">
         <div class="centrado-de-contenido-mis-proyectos">
             <div class="titulo-mis-proyectos">
             <h2>Mis Proyectos</h2>
@@ -112,31 +115,31 @@
             </div>
             <div class="container-mis-proyectos">
                 <div class="cards-1">
-                    <img src="img/undraw_Balloons_re_8ymj.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Balloons_re_8ymj.svg" width="250px" height="250px">
                     <h3> Mi Portfolio</h3>
                 </div>
                 <div class="cards-2">
-                    <img src="img/undraw_Landscape_mode_re_r964.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Landscape_mode_re_r964.svg" width="250px" height="250px">
                     <h3> Generador de memes</h3>
                 </div>
                 <div class="cards-3">
-                    <img src="img/undraw_Online_learning_re_qw08.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Online_learning_re_qw08.svg" width="250px" height="250px">
                     <h3> Match 3</h3>
                 </div>
                 <div class="cards-4">
-                    <img src="img/undraw_teamwork_hpdk.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_teamwork_hpdk.svg" width="250px" height="250px">
                     <h3> Controlador de gastos</h3>
                 </div>
                 <div class="cards-5">
-                    <img src="img/undraw_Travel_booking_re_6umu.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Travel_booking_re_6umu.svg" width="250px" height="250px">
                     <h3> Administrador de reuniones</h3>
                 </div>
                 <div class="cards-6">
-                    <img src="img/undraw_Walking_outside_re_56xo.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Walking_outside_re_56xo.svg" width="250px" height="250px">
                     <h3> Todo app</h3>
                 </div>
                 <div class="cards-7">
-                    <img src="img/undraw_Website_setup_re_d4y9.svg" width="250px" height="250px">
+                    <img class="img1" src="img/undraw_Website_setup_re_d4y9.svg" width="250px" height="250px">
                     <h3> Buscador de peliculas</h3>
                 </div>
             </div>
@@ -148,17 +151,21 @@
             <div class="form-container">
             <div class="redes">
                 <h2 class="titulo-redes">Contactame</h2>
+                <br>
                 <p>Podemos entrar en contacto por redes sociales y correo electronico, o bien podes dejarme tus datos y un mensaje en el formulario y te escribo!</p>
-
+                <br>
                 <ul class="redes1">
                     <li>
                         <a href="https://twitter.com/mechadefault" class="link-redes"><i class="fab fa-twitter"></i>twitter</a>
                     </li>
+                    <br>
                     <li>
                         <a href="https://github.com/mecha-default" class="link-redes"><i class="fab fa-github-alt"></i>git-hub </a>
                     <li>
+                        <br>
                         <a href="https://www.linkedin.com/in/mfresno/" class="link-redes"> <i class="fab fa-linkedin-in"></i>linkedin</a>
                     </li>
+                    <br>
                     <li>
                         <a href="mailto:mercedes.fresno@gmail.com" class="link-redes"><i class="fas fa-envelope"></i>gmail</a>
                     </li>
@@ -166,45 +173,47 @@
             
             </div>
             <div class="form">
-                <form action="" method="POST">
-                    <h2 class="titulo-redes">Escribime</h2>
-                    <ul>
-                        <li>
-                            <label for="name"> Nombre*</label>
-                            <input type="text" name="name" placeholder="p.ej.: Mercedes" id="name" />
-                        </li>
-                        
-                        <li>
-                            <label for="lastname">Apellido* </label>
-                            <input type="text" name="apellido" placeholder="p.ej.: Fresno" id="lastname" />
-
-                        </li>
-                        <li>
-                            <label for="mail"> Email*</label>
-                            <input type="text" name="user_mail" placeholder="p.ej. : mercedes.fresno@gmail.com"id="mail" />
-          
-                        </li>
-                        <li>
-                            <label> Mensaje*</label>
-                            <textarea type="text" name="user_mensaje" placeholder="p.ej. : Escriba un mensaje aqui"
-                                id="msg"></textarea>
-                        </li>
-                        <li>
-                            <button type="submit" class="boton-enviar"> Enviar </button>
-                        </li>
-                    </ul>
-                </form>
+                    <h2 class="contacto-titulo">
+                        Escribime
+                    </h2>
+                    <form action="http://" method="POST" class="contacto-form">
+                        <div class="input-name">
+                            <div class="form-control">
+                                <label for="firstname">Nombre *</label>
+                                <input type="text" name="Nombre" id="firsname" class="input-firtsname" placeholder="p. ej.: Ada" aria-label="Nombre" required>
+                            </div>
+                            <div class="form-control">
+                                <label for="lasname">Apellido *</label>
+                                <input type="text" name="Apellido" id="lasname" class="input-lasname" placeholder="p. ej.: Lovelace" aria-label="Apellido" required>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email *</label>
+                            <input type="email" name="Email" id="email" class="input-control" placeholder="p. ej.: ada.Lovelace@mail.com" aria-label="Email" required>
+    
+                        </div>
+                        <div class="form-control">
+                            <label for="mesagge">Mensaje *</label>
+                            <textarea name="mensaje" id="message" cols="25" rows="8" class="input-control" placeholder="Escriba un mensaje aquí" aria-label="Mensaje" required></textarea>
+    
+                        </div>
+                        <button type="submit" class="contacto-send">
+                            Enviar
+                        </button>
+    
+                    </form>
             </div>
         </div>
         </div>
     </section>
     <footer id="futer">
         <ul class="pie-de-pagina">
-            <li><a href="mi-nombre" clas="links-nav">HOLA</a></li>
-            <li><a href="mis-conocimientos" clas="links-nav">CONOCIMIENTOS </a></li>
-            <li><a href="mis-proyectos" clas="links-nav">PROYECTO</a></li>
+            <li><a href="#nav" clas="links-nav">HOLA</a></li>
+            <li><a href="#mis-conocimientos" clas="links-nav">CONOCIMIENTOS </a></li>
+            <li><a href="#mis-proyectos" clas="links-nav">PROYECTO</a></li>
             <li><a href="#formulario-de-contacto">CONTACTO</a></li>
         </ul>
+        <br>
         <ul class="redes-pie">
                     <li>
                         <a href="https://twitter.com/mechadefault" class="pie-links"><i class="fab fa-twitter turn"></i></a>
@@ -218,6 +227,8 @@
                         <a href="mailto:mercedes.fresno@gmail.com" class="pie-links"><i class="fas fa-envelope turn"></i></a>
                     </li>
                 </ul>
+                <br>
+                <br>
         <p>Hecho con 💜 por Mecha</p>
     </footer>
 
