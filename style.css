@@ -85,6 +85,7 @@ a:link {
   align-items: center;
   justify-content: center;
 }
+
 .mmf {
   font-family: "Roboto Slab", serif;
   font-size: 40px;
@@ -488,13 +489,16 @@ footer {
   }
   h2 {
     font-size: 25px;
+    align-items: center;
   }
   p {
     font-size: 12px;
+    align-items: center;
   }
   .cards {
     display: flex;
     padding: 0;
+    margin-bottom: 20px;
   }
   .fila1 {
     display: flex;
@@ -507,6 +511,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .image-1,
   .image-2,
@@ -526,10 +532,16 @@ footer {
     width: 300px;
   }
 
+  .titulo-mis-proyectos > p{
+    margin-left: 20px;
+    width: 300px;
+  }
+
   .container-mis-proyectos {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
+    margin-bottom: 10px;
 
 
   }
@@ -548,44 +560,88 @@ footer {
     height: 150px;
   }
 
-  /* ARREGLAR FORM*/
-  .form-container {
+  .formulario-de-contacto{
+    width: 250px;
     display: flex;
     flex-direction: column;
-    width: 320px;
-  }
-  .redes {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
+    padding-right: 70px;
   }
 
+  .form-container {
+    display:inline-flex;
+    flex-direction: column;
+    width: 250px;
+    height: 750px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 70px;
+    list-style-position: initial;
+  }
+
+  .form-container > p,h2{
+    text-align: center;
+  }
+  .redes {
+    padding: 5px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto-titulo{
+    padding-top: 10px;
+  }
   .input-name {
     flex-direction: column;
     font-size: 15px;
     width: 200px;
   }
 
-  .input-lastname {
+  label{
+    padding-left: 5px;
+  }
+
+  .input-lastname, .input-control {
     margin-left: 0;
     font-size: 15px;
-    width: 200px;
+    width: 220px;
   }
   textarea {
     width: 250px;
     height: 100px;
   }
-  /*ARREGLAR FORM */
+ 
   .pie-de-pagina {
     display: none;
   }
   .footer {
-    width: 320px;
+    width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .redes-pie {
+    width: 280px;
     display: flex;
   }
+}
+
+@media (max-width: 768px){
+    
+#nav {
+display: none;
+
+}
+.lo-que-hago {
+    font-size: 10px
+  }
+  /*
+  .form-container {
+width: 650px;
+
+  }
+.formulario-de-contacto{
+    height: 800px;
+}
+*/
 }
