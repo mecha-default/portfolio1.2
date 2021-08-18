@@ -432,6 +432,7 @@ footer {
   display: flex;
 
 }
+
 .turn:hover {
   background-color: white;
   cursor: pointer;
@@ -623,7 +624,9 @@ footer {
   .redes-pie {
     width: 280px;
     display: flex;
+    
   }
+  
 }
 
 @media (max-width: 768px){
